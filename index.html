@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Smartphone Advertisement</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .cta-button {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .specifications {
+            margin-top: 20px;
+        }
+
+        #carouselExample {
+            width: 100%; /* Full width for mobile */
+            height: auto;
+        }
+
+        /* Ensure images fill the carousel container */
+        #carouselExample .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Responsive font sizes */
+        h1, h2 {
+            font-size: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            .cta-button {
+                width: auto; /* Set width to auto on larger screens */
+            }
+        }
+
+        /* Ensure form fields are full-width on mobile */
+        @media (max-width: 768px) {
+            .form-group {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center my-5">
+            <h1>Unleash Your Potential with the Parax 11</h1>
+            <h2>Advanced Technology Meets Sleek Design</h2>
+        </div>
+
+        <div class="text-center">
+            <img src="iphone.jpg" alt="Parax 11 Smartphone" class="product-image">
+        </div>
+
+        <div class="text-center my-4">
+            <p>Discover the Parax 11, equipped with the latest features to elevate your mobile experience. Enjoy a stunning 6.7-inch AMOLED display, a powerful Octa-Core processor, and a 108MP triple camera system for breathtaking photos and videos. With 12GB of RAM and 256GB of storage, multitasking and storing your favorite content has never been easier.</p>
+            <a href="#" class="cta-button">Order Now and Get 20% Off – Limited Time Offer!</a>
+        </div>
+
+        <div class="specifications">
+            <h3 class="text-center">Technical Specifications:</h3>
+            <ul class="list-unstyled text-center">
+                <li><strong>Display:</strong> 6.7-inch AMOLED, 1440 x 3200 pixels</li>
+                <li><strong>Processor:</strong> Octa-Core 2.84 GHz</li>
+                <li><strong>RAM:</strong> 12GB</li>
+                <li><strong>Storage:</strong> 256GB (Expandable)</li>
+                <li><strong>Camera:</strong> 108MP Triple Rear, 32MP Front</li>
+                <li><strong>Battery:</strong> 5000mAh with Fast Charging</li>
+            </ul>
+        </div>
+
+        <div class="text-center my-4">
+            <p><strong>Price:</strong>  &#8377;59,999</p>
+            <p><strong>Available for purchase at</strong> <a href="#">[Online Store]</a> and select retail locations.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="my-5">
+            <h3 class="text-center">Inquire Now</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
